@@ -6,7 +6,7 @@ import time
 
 def test_open_site():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.get("https://careers.hireskilldev.com/aceint/job/create/job-rounds?step=1")
+    driver.get("https://bootcoding.hireskilldev.com/settings/profile")
     time.sleep(2)
     
     assert "Hiring" in driver.title or "Bootcoding" in driver.title
